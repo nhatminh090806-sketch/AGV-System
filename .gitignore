@@ -1,0 +1,23 @@
+
+# Python / Django
+__pycache__/
+*.py[cod]
+env/
+venv/
+.venv/
+*.log
+
+# Local database
+backend/AGVbackend/db.sqlite3
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# React
+node_modules/
+dist/
+
+# PlatformIO
+.pio/

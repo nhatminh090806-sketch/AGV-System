@@ -1,0 +1,91 @@
+.unit-detail {
+  background-color: transparent;
+  color: white;
+  font-family: sans-serif;
+  font-style: italic;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.section-title {
+  color: #a3a8b7;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.empty-text {
+  color: #a3a8b7;
+  font-size: 14px;
+}
+
+.unit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ffffff40;
+  border-bottom: 1px solid #ffffff40;
+  padding: 12px 0;
+  margin-bottom: 20px;
+}
+
+.unit-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.status-badge {
+  background-color: #1a8b8c;
+  color: #00c3ff;
+  padding: 4px 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+
+.telemetry-title {
+  color: #a3a8b7;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.telemetry-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.telemetry-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.telemetry-item .label {
+  color: #6a7185;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.telemetry-item .value {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.text-cyan {
+  color: #00c3ff;
+}
+
+.telemetry-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #d1d5db;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}

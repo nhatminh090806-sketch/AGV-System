@@ -1,0 +1,92 @@
+/* control.css */
+
+.control-panel {
+  width: 100%; /* Đổi từ 33.33% thành 100% */
+  background-color: transparent; /* Bỏ màu nền vì đã có layout-left lo */
+  padding: 0 20px 20px 20px; /* Căn lề trái phải */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+/* Nút STOP (Màu đỏ) */
+.stop-button {
+  width: 100%;
+  background-color: #ff3b3f; /* Màu đỏ */
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.stop-button:hover {
+  opacity: 0.9;
+}
+
+/* Container cho các dropdown */
+.select-box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Style cho các dropdown (select) */
+.select-box-container select {
+  width: 100%;
+  background-color: #6bb9e2; /* Màu xanh lơ nhạt */
+  color: #1a1d2d;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  font-style: italic;
+  appearance: none; /* Ẩn mũi tên mặc định của trình duyệt */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.select-box-container select:focus {
+  outline: 2px solid white;
+}
+
+/* Container cho các nút Submit và Clear */
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Style cho nút Submit (Màu xanh dương) */
+.submit-button {
+  flex: 1;
+  background-color: #00c3ff; /* Màu xanh cyan */
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  font-style: italic;
+  cursor: pointer;
+}
+
+/* Style cho nút Clear (Màu xám) */
+.clear-button {
+  flex: 1;
+  background-color: #e0e0e0; /* Màu xám nhạt */
+  color: #1a1d2d;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.submit-button:hover,
+.clear-button:hover {
+  opacity: 0.9;
+}

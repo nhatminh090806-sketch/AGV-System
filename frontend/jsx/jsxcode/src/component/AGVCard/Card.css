@@ -1,0 +1,91 @@
+/* Card.css */
+.agv-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  gap: 15px 20px;
+  padding: 20px 10px;
+  border-bottom: 1px solid #ffffff40; /* Đường kẻ ngang chia các card */
+  color: white;
+  font-family: sans-serif;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.agv-card:hover {
+  background-color: rgba(255, 255, 255, 0.05); /* Hiệu ứng hover nhẹ */
+}
+
+/* Tên AGV (kèm dấu chấm xanh) */
+.agv-card span:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+/* Tạo dấu chấm màu xanh cyan trước tên AGV */
+.agv-card span:nth-child(1)::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #00c3ff;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+/* Nhãn Trạng thái (Status) */
+.agv-card span:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+  background-color: #1a8b8c; /* Màu xanh ngọc */
+  color: white;
+  padding: 4px 12px;
+  border-radius: 2px;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Thanh Tiến trình (Progress/Battery) */
+.agv-card progress {
+  grid-column: 1;
+  grid-row: 2;
+  width: 90%;
+  height: 6px;
+  align-self: center;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.agv-card progress::-webkit-progress-bar {
+  background-color: #23273a; /* Màu nền tối của thanh */
+  border-radius: 3px;
+}
+
+.agv-card progress::-webkit-progress-value {
+  background-color: #d1d5db; /* Màu sáng của phần đã lấp đầy */
+  border-radius: 3px;
+}
+
+/* Phần trăm pin */
+.agv-card span:nth-child(4) {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 14px;
+  align-self: center;
+  text-align: right;
+}
+/* Trạng thái khi card được Click chọn (Active) */
+.agv-card.active {
+  background-color: #171923; /* Màu nền tối đậm hơn hẳn so với màu #23273a mặc định */
+  border-left: 4px solid #00c3ff; /* Thêm vạch màu xanh cyan ở cạnh trái để làm điểm nhấn */
+  box-shadow: inset 0 0 10px rgba(0, 195, 255, 0.1); /* Hiệu ứng phát sáng nhẹ bên trong */
+  border-bottom: 1px solid rgba(0, 195, 255, 0.3); /* Làm sáng đường viền dưới */
+}
+
+/* Tùy chọn: Chữ trong card active có thể sáng hơn */
+.agv-card.active span:nth-child(1) {
+  color: #00c3ff; /* Tên AGV chuyển sang màu cyan khi được chọn */
+}

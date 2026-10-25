@@ -1,0 +1,14 @@
+.app-header {
+  text-align: center;
+  padding: 20px 20px 10px 20px; /* Căn lề trên, phải, dưới, trái */
+}
+
+.app-header h2 {
+  color: #00c3ff; /* Màu xanh cyan giống bản thiết kế */
+  font-size: 28px; /* CHỈNH KÍCH THƯỚC CHỮ Ở ĐÂY (24px - 28px là vừa đẹp) */
+  font-style: italic; /* In nghiêng */
+  margin: 0;
+  font-weight: normal;
+  letter-spacing: 2px; /* Khoảng cách giữa các chữ cái */
+  white-space: nowrap; /* Ép chữ nằm trên 1 dòng, không bị rớt dòng */
+}

@@ -1,0 +1,68 @@
+/* App.css */
+
+/* 1. Reset lại box-sizing để border/padding không làm phình kích thước */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Đảm bảo html, body và thẻ #root (của React) chiếm trọn 100% màn hình */
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  background-color: #1a1c29; /* Màu nền tổng thể */
+  overflow: hidden; /* Ẩn hoàn toàn thanh cuộn của trình duyệt */
+}
+
+/* KHUNG BAO BỌC: Dùng flexbox chia 3 cột ngang */
+.dashboard-layout {
+  display: flex;
+  flex-direction: row;
+  height: 100%; /* Dùng 100% thay vì 100vh để an toàn hơn */
+  width: 100%; /* Dùng 100% thay vì 100vw để tránh lỗi thanh cuộn ngang */
+  overflow: hidden;
+}
+
+/* CỘT TRÁI */
+.layout-left {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  background-color: #23273a;
+  border-right: 1px solid #ffffff40;
+  /* Nếu muốn nội dung bên trong có khoảng cách, có thể thêm padding ở đây */
+}
+
+/* CỘT GIỮA */
+.layout-center {
+  flex: 1; /* Chiếm toàn bộ không gian còn lại ở giữa */
+  display: flex;
+  flex-direction: column;
+}
+
+.map-area {
+  flex: 1;
+  background-color: white;
+  margin: 15px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.cards-area {
+  height: 250px;
+  border-top: 1px solid #ffffff40;
+  background-color: #23273a;
+  overflow-y: auto;
+}
+
+/* CỘT PHẢI */
+.layout-right {
+  width: 320px;
+  background-color: #23273a;
+  border-left: 1px solid #ffffff40;
+  display: flex;
+  flex-direction: column;
+}
